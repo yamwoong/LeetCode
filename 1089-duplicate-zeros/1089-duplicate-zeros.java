@@ -6,7 +6,7 @@ class Solution {
       if (a == 0)
         zeros++;
 
-    for (int i = arr.length - 1, j = arr.length + zeros - 1; i < j; --i, --j) {
+    for (int i = arr.length - 1, j = arr.length + zeros - 1; i < j; i--, j--) {
       if (j < arr.length)
         arr[j] = arr[i];
       if (arr[i] == 0)
