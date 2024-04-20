@@ -1,13 +1,10 @@
-
-
-
 class Solution {
   public void duplicateZeros(int[] arr) {
     int zeros = 0;
 
     for (int a : arr)
       if (a == 0)
-        ++zeros;
+        zeros++;
 
     for (int i = arr.length - 1, j = arr.length + zeros - 1; i < j; --i, --j) {
       if (j < arr.length)
