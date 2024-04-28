@@ -1,0 +1,7 @@
+SELECT  P.FIRSTNAME
+     ,  P.LASTNAME
+     ,  A.CITY
+     ,  A.STATE
+  FROM PERSON   P
+     , ADDRESS  A
+ WHERE  P.PERSONID  = A.PERSONID(+)
